@@ -179,7 +179,6 @@
 		81F44A22272AFBEC00396F49 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				81F44A26272AFBEC00396F49 /* SCAlert.xib */,
 				81F44A23272AFBEC00396F49 /* SCAlertAction.swift */,
 				81F44A24272AFBEC00396F49 /* SCAlertController.swift */,
 			);
@@ -190,6 +189,7 @@
 		81F44A2B272B068000396F49 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				81F44A26272AFBEC00396F49 /* SCAlert.xib */,
 			);
 			name = Assets;
 			path = SCAlertController/Assets;
