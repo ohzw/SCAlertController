@@ -167,7 +167,7 @@
 		788E6FC32AB504182C357FAD3E5A70E1 /* SCAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				81F44A25272AFBEC00396F49 /* Assets */,
+				81F44A2B272B068000396F49 /* Assets */,
 				81F44A22272AFBEC00396F49 /* Classes */,
 				414C95F052D04D307003F74395E47E1B /* Pod */,
 				024429E016C0C2CF4A880D0E19D21C29 /* Support Files */,
@@ -179,6 +179,7 @@
 		81F44A22272AFBEC00396F49 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				81F44A26272AFBEC00396F49 /* SCAlert.xib */,
 				81F44A23272AFBEC00396F49 /* SCAlertAction.swift */,
 				81F44A24272AFBEC00396F49 /* SCAlertController.swift */,
 			);
@@ -186,10 +187,9 @@
 			path = SCAlertController/Classes;
 			sourceTree = "<group>";
 		};
-		81F44A25272AFBEC00396F49 /* Assets */ = {
+		81F44A2B272B068000396F49 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				81F44A26272AFBEC00396F49 /* SCAlert.xib */,
 			);
 			name = Assets;
 			path = SCAlertController/Assets;
