@@ -1,7 +1,7 @@
 {
   "name": "SCAlertController",
   "version": "0.1.0",
-  "summary": "A short description of SCAlertController.",
+  "summary": "Simple Customizeable Alert for iOS App.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ohzw/SCAlertController",
   "license": {
@@ -15,8 +15,10 @@
     "git": "https://github.com/ohzw/SCAlertController.git",
     "tag": "0.1.0"
   },
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SCAlertController/Classes/**/*"
+  "source_files": "SCAlertController/Classes/**/*",
+  "swift_version": "5.0"
 }

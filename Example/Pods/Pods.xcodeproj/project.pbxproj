@@ -8,72 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		02E3B6BC276AEEC8E1FF7564B5240323 /* Pods-SCAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D66543BA3117F2F5E53407ADE5C6E397 /* Pods-SCAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DA460B426021ADC451AB5A599DC60C0 /* SCAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5686A17F9FF26DC1E8CB1E4F269EE6 /* SCAlertController.swift */; };
 		1FD2D9AA17B85E138AF0AD087128FB96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		81F44A1A272AF32300396F49 /* SCAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F44A10272AF2AE00396F49 /* SCAlert.xib */; };
-		81F44A1B272AF32300396F49 /* SCAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F44A12272AF2AE00396F49 /* SCAlertController.swift */; };
-		81F44A1C272AF32300396F49 /* SCAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F44A11272AF2AE00396F49 /* SCAlertAction.swift */; };
+		4F5770440CAD5432AE498B7D0B2E8AB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6251226F5BB34C9EFF0506EE12AB9D28 /* SCAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3FCF87E48964E13B3CAEE7A8FA5CC /* SCAlertAction.swift */; };
 		8D83E96B35B8E1A62E51739866EB0DFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A3B9F5083D6F3BD79D77BAD68907668F /* Pods-SCAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C63DCF2246B223D1B7F4B25181EB584 /* Pods-SCAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B44E2F2CE9FCF8ED21133B2F77226A5E /* SCAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B5F3F9BA8AEB7BE4836E287C9F1F5 /* SCAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4029DDAE78F95CC1FF264F39A22EAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C63121597FFAA7554A2EEB9862B63E41 /* Pods-SCAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4B091CA2E67E1A41B260671A16AE5 /* Pods-SCAlertController_Example-dummy.m */; };
-		E1A884549BA733281374955D20BFC4AE /* SCAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F4D375E35E3B7A2C720154F0CE2139 /* SCAlertController-dummy.m */; };
+		E4C456B286FB35FBD67B31396CA6A9E0 /* SCAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D80B1A3AF333BAEFB53D716FEF79 /* SCAlertController-dummy.m */; };
 		E9CA51E73293420B4B310DA9126F561C /* Pods-SCAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFA8DE0E5FCE5435FC5FFF59820FCB /* Pods-SCAlertController_Tests-dummy.m */; };
+		EF87373870D5F9A61B2D6445C631638D /* SCAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AF82B38C1EEF27DCB3FBC9F21DE962 /* SCAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F65227C172CD9983E8063613FAEF670 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 254EAAB1411BAE2A330374B9973ED880;
-			remoteInfo = SCAlertController;
-		};
-		1501018EBACE00A963F7E0D322ED2905 /* PBXContainerItemProxy */ = {
+		32523294BF09CED74E0633CC15A8864A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E43A8372B6B5A8924401DC139623C4E1;
 			remoteInfo = "Pods-SCAlertController_Example";
 		};
+		55A0818C872B86FC5E918B2CF0C0BE2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 254EAAB1411BAE2A330374B9973ED880;
+			remoteInfo = SCAlertController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		029F17DF5E49AA243590861792640670 /* Pods-SCAlertController_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SCAlertController_Tests"; path = Pods_SCAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		034202710956E3755927F1E1A0BCAEEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		09B6C064D039FFAEA27C9B66C59F833D /* Pods-SCAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		09E9F3CB2853BA013D729CE6E2389AFC /* Pods-SCAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SCAlertController_Tests.modulemap"; sourceTree = "<group>"; };
 		0BFFA8DE0E5FCE5435FC5FFF59820FCB /* Pods-SCAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SCAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
 		1D2D0CDE248DD6BB4B7463016DDA441A /* Pods-SCAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		28D805BCEF7AD76BEDF5C13D9BDF29D8 /* SCAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCAlertController.modulemap; sourceTree = "<group>"; };
 		2C56294CDCFBA8BEC3A8C4A6DB37C8E2 /* Pods-SCAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2C63DCF2246B223D1B7F4B25181EB584 /* Pods-SCAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3100C3A726D1D85D536689E7534E8FED /* SCAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAlertController.release.xcconfig; sourceTree = "<group>"; };
 		37D4B091CA2E67E1A41B260671A16AE5 /* Pods-SCAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SCAlertController_Example-dummy.m"; sourceTree = "<group>"; };
-		4E3472D45DCA9589C917529D6593670D /* SCAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCAlertController-Info.plist"; sourceTree = "<group>"; };
+		388BF42C48B080E7EAFC7F530BAA6676 /* SCAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCAlertController-Info.plist"; sourceTree = "<group>"; };
+		42AF82B38C1EEF27DCB3FBC9F21DE962 /* SCAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAlertController-umbrella.h"; sourceTree = "<group>"; };
+		50B3FCF87E48964E13B3CAEE7A8FA5CC /* SCAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAlertAction.swift; path = SCAlertController/Classes/SCAlertAction.swift; sourceTree = "<group>"; };
 		530C426F48915AE078C2F3D1079125DC /* SCAlertController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCAlertController; path = SCAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB31AAB43B295865C08317B3B98D1BB /* Pods-SCAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SCAlertController_Example.modulemap"; sourceTree = "<group>"; };
-		6815C10E0451BE973D24E095AB71B4A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5F263F55FB0AB5A218D5C6398F0C2C2A /* SCAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAlertController.debug.xcconfig; sourceTree = "<group>"; };
 		6991A08EC2AE0FCCC0A0720A111E81AB /* Pods-SCAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		701FF4E3E09EEBF0E37DE4DDD5B0D521 /* SCAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SCAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		81F44A10272AF2AE00396F49 /* SCAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAlert.xib; sourceTree = "<group>"; };
-		81F44A11272AF2AE00396F49 /* SCAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAlertAction.swift; sourceTree = "<group>"; };
-		81F44A12272AF2AE00396F49 /* SCAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAlertController.swift; sourceTree = "<group>"; };
-		87428C21CA712B1FEC37C0C11925B311 /* Pods_SCAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		970BB19865D52085847A652AD1F7C512 /* SCAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAlertController.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2F4D375E35E3B7A2C720154F0CE2139 /* SCAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCAlertController-dummy.m"; sourceTree = "<group>"; };
-		BA77A5DBD343B9C2D5FC07ED6AB529E7 /* SCAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAlertController-prefix.pch"; sourceTree = "<group>"; };
+		84B4D80B1A3AF333BAEFB53D716FEF79 /* SCAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCAlertController-dummy.m"; sourceTree = "<group>"; };
+		87428C21CA712B1FEC37C0C11925B311 /* Pods-SCAlertController_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SCAlertController_Example"; path = Pods_SCAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B376AB5B644BFA4F98E4EA342E29A2CE /* SCAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCAlertController.modulemap; sourceTree = "<group>"; };
 		C6B7A02F99FC81B12F9BACB424835CCE /* Pods-SCAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D133BA65F164575AD8E2C674DFCBA8D2 /* SCAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCAlertController.release.xcconfig; sourceTree = "<group>"; };
 		D1599F63F32D5BFEC5838865203302CC /* Pods-SCAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D3F64E3A930EF1B3755FBE4B5658CB8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D56613C831372D46D66053E4C7080582 /* Pods-SCAlertController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAlertController_Tests-Info.plist"; sourceTree = "<group>"; };
 		D66543BA3117F2F5E53407ADE5C6E397 /* Pods-SCAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
 		DB9AA6582F7DE650B2CC6F4FD8CBF990 /* Pods-SCAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DDD01A7BBEE8955B79249B44BA7B92A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DDFD26BC9BEC96A45B17D0C4FF1ADAAA /* Pods-SCAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DF9B5F3F9BA8AEB7BE4836E287C9F1F5 /* SCAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAlertController-umbrella.h"; sourceTree = "<group>"; };
+		E7C62028E503A54A9BD9D1ACF431E1AC /* SCAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCAlertController-prefix.pch"; sourceTree = "<group>"; };
 		E9919625F762BDBB74473FD3DAD3D8BA /* Pods-SCAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCAlertController_Example-Info.plist"; sourceTree = "<group>"; };
 		EA21A6505620077903B6F50C3FCB7AB9 /* Pods-SCAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F44FBEA1CFE7A53EA4FA00F9D46FAD97 /* SCAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SCAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE5686A17F9FF26DC1E8CB1E4F269EE6 /* SCAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAlertController.swift; path = SCAlertController/Classes/SCAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +91,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74BC87256B0C9E955D1D0E5DE0732311 /* Frameworks */ = {
+		3FD4684C13FF4AB58EC456BC625C644A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4029DDAE78F95CC1FF264F39A22EAFB /* Foundation.framework in Frameworks */,
+				4F5770440CAD5432AE498B7D0B2E8AB4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024429E016C0C2CF4A880D0E19D21C29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B376AB5B644BFA4F98E4EA342E29A2CE /* SCAlertController.modulemap */,
+				84B4D80B1A3AF333BAEFB53D716FEF79 /* SCAlertController-dummy.m */,
+				388BF42C48B080E7EAFC7F530BAA6676 /* SCAlertController-Info.plist */,
+				E7C62028E503A54A9BD9D1ACF431E1AC /* SCAlertController-prefix.pch */,
+				42AF82B38C1EEF27DCB3FBC9F21DE962 /* SCAlertController-umbrella.h */,
+				5F263F55FB0AB5A218D5C6398F0C2C2A /* SCAlertController.debug.xcconfig */,
+				D133BA65F164575AD8E2C674DFCBA8D2 /* SCAlertController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SCAlertController";
+			sourceTree = "<group>";
+		};
 		16950DD097911FF7F5C9A41BAB0E4867 /* Pods-SCAlertController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,49 +134,22 @@
 			path = "Target Support Files/Pods-SCAlertController_Example";
 			sourceTree = "<group>";
 		};
-		1BC3147BD0B7BC99CA075B43E8971CDD /* SCAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				81F44A04272AF27500396F49 /* Assets */,
-				81F44A02272AF27500396F49 /* Classes */,
-				55B4681646B7E9DEB52F6D9723668F98 /* Pod */,
-				3437C4B58A1858F1BB34BCEF47DE4CE9 /* Support Files */,
-			);
-			name = SCAlertController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		25415A8AE6803ABA21C72DD98C07AF9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87428C21CA712B1FEC37C0C11925B311 /* Pods_SCAlertController_Example.framework */,
+				87428C21CA712B1FEC37C0C11925B311 /* Pods-SCAlertController_Example */,
 				029F17DF5E49AA243590861792640670 /* Pods-SCAlertController_Tests */,
 				530C426F48915AE078C2F3D1079125DC /* SCAlertController */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3437C4B58A1858F1BB34BCEF47DE4CE9 /* Support Files */ = {
+		414C95F052D04D307003F74395E47E1B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				28D805BCEF7AD76BEDF5C13D9BDF29D8 /* SCAlertController.modulemap */,
-				A2F4D375E35E3B7A2C720154F0CE2139 /* SCAlertController-dummy.m */,
-				4E3472D45DCA9589C917529D6593670D /* SCAlertController-Info.plist */,
-				BA77A5DBD343B9C2D5FC07ED6AB529E7 /* SCAlertController-prefix.pch */,
-				DF9B5F3F9BA8AEB7BE4836E287C9F1F5 /* SCAlertController-umbrella.h */,
-				970BB19865D52085847A652AD1F7C512 /* SCAlertController.debug.xcconfig */,
-				3100C3A726D1D85D536689E7534E8FED /* SCAlertController.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SCAlertController";
-			sourceTree = "<group>";
-		};
-		55B4681646B7E9DEB52F6D9723668F98 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6815C10E0451BE973D24E095AB71B4A8 /* LICENSE */,
-				D3F64E3A930EF1B3755FBE4B5658CB8C /* README.md */,
-				701FF4E3E09EEBF0E37DE4DDD5B0D521 /* SCAlertController.podspec */,
+				DDD01A7BBEE8955B79249B44BA7B92A0 /* LICENSE */,
+				034202710956E3755927F1E1A0BCAEEE /* README.md */,
+				F44FBEA1CFE7A53EA4FA00F9D46FAD97 /* SCAlertController.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -176,31 +162,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		81F44A02272AF27500396F49 /* Classes */ = {
+		788E6FC32AB504182C357FAD3E5A70E1 /* SCAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				81F44A11272AF2AE00396F49 /* SCAlertAction.swift */,
-				81F44A12272AF2AE00396F49 /* SCAlertController.swift */,
+				50B3FCF87E48964E13B3CAEE7A8FA5CC /* SCAlertAction.swift */,
+				FE5686A17F9FF26DC1E8CB1E4F269EE6 /* SCAlertController.swift */,
+				414C95F052D04D307003F74395E47E1B /* Pod */,
+				024429E016C0C2CF4A880D0E19D21C29 /* Support Files */,
 			);
-			name = Classes;
-			path = SCAlertController/Classes;
-			sourceTree = "<group>";
-		};
-		81F44A04272AF27500396F49 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				81F44A10272AF2AE00396F49 /* SCAlert.xib */,
-			);
-			name = Assets;
-			path = SCAlertController/Assets;
-			sourceTree = "<group>";
-		};
-		9690CE9A61DD9C0B20645570ACB15AFC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1BC3147BD0B7BC99CA075B43E8971CDD /* SCAlertController */,
-			);
-			name = "Development Pods";
+			name = SCAlertController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		AC86C6C3DFBF117A649BBB8DC61C02A8 /* Pods-SCAlertController_Tests */ = {
@@ -219,6 +190,14 @@
 			path = "Target Support Files/Pods-SCAlertController_Tests";
 			sourceTree = "<group>";
 		};
+		C272EDF943AF0C3DC7F4D265DA6395F9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				788E6FC32AB504182C357FAD3E5A70E1 /* SCAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		CE39AAD61BAC7C74EE73716F0FD8C0A5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9690CE9A61DD9C0B20645570ACB15AFC /* Development Pods */,
+				C272EDF943AF0C3DC7F4D265DA6395F9 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				25415A8AE6803ABA21C72DD98C07AF9E /* Products */,
 				CE39AAD61BAC7C74EE73716F0FD8C0A5 /* Targets Support Files */,
@@ -266,11 +245,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC45C9C3758802D125636567B30F8436 /* Headers */ = {
+		CB3EA783FA26A8090B24545C27B930EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B44E2F2CE9FCF8ED21133B2F77226A5E /* SCAlertController-umbrella.h in Headers */,
+				EF87373870D5F9A61B2D6445C631638D /* SCAlertController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B66B9C4C82BB983839A9CCAA724E3C9D /* PBXTargetDependency */,
+				0A849A5E2824DAAE69421C1ED9DAD1E0 /* PBXTargetDependency */,
 			);
 			name = "Pods-SCAlertController_Tests";
 			productName = Pods_SCAlertController_Tests;
@@ -298,12 +277,12 @@
 		};
 		254EAAB1411BAE2A330374B9973ED880 /* SCAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BE166AEDA3FDC9D07D6D67D95A6076E /* Build configuration list for PBXNativeTarget "SCAlertController" */;
+			buildConfigurationList = C6B910FCEDCAAC7E196D78FDEB9A36CE /* Build configuration list for PBXNativeTarget "SCAlertController" */;
 			buildPhases = (
-				CC45C9C3758802D125636567B30F8436 /* Headers */,
-				714113B4B87CE72EEDB89E05E3C18E31 /* Sources */,
-				74BC87256B0C9E955D1D0E5DE0732311 /* Frameworks */,
-				D2104B580D048DFD18BFA0D9696C8FA3 /* Resources */,
+				CB3EA783FA26A8090B24545C27B930EF /* Headers */,
+				1A6265E94FCC1131D18ABF26CD1E5814 /* Sources */,
+				3FD4684C13FF4AB58EC456BC625C644A /* Frameworks */,
+				D4715E960FAFA669CD69DE10C40F9E86 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -326,11 +305,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2295F1D3BD49A7E1BC05B4B381B8C41E /* PBXTargetDependency */,
+				9A7E0313185793575AD8C1D6FE16AAAB /* PBXTargetDependency */,
 			);
 			name = "Pods-SCAlertController_Example";
 			productName = Pods_SCAlertController_Example;
-			productReference = 87428C21CA712B1FEC37C0C11925B311 /* Pods_SCAlertController_Example.framework */;
+			productReference = 87428C21CA712B1FEC37C0C11925B311 /* Pods-SCAlertController_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -341,11 +320,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					E43A8372B6B5A8924401DC139623C4E1 = {
-						LastSwiftMigration = 1310;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,11 +349,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2104B580D048DFD18BFA0D9696C8FA3 /* Resources */ = {
+		D4715E960FAFA669CD69DE10C40F9E86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F44A1A272AF32300396F49 /* SCAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,13 +366,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		714113B4B87CE72EEDB89E05E3C18E31 /* Sources */ = {
+		1A6265E94FCC1131D18ABF26CD1E5814 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F44A1B272AF32300396F49 /* SCAlertController.swift in Sources */,
-				81F44A1C272AF32300396F49 /* SCAlertAction.swift in Sources */,
-				E1A884549BA733281374955D20BFC4AE /* SCAlertController-dummy.m in Sources */,
+				6251226F5BB34C9EFF0506EE12AB9D28 /* SCAlertAction.swift in Sources */,
+				0DA460B426021ADC451AB5A599DC60C0 /* SCAlertController.swift in Sources */,
+				E4C456B286FB35FBD67B31396CA6A9E0 /* SCAlertController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,17 +395,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2295F1D3BD49A7E1BC05B4B381B8C41E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SCAlertController;
-			target = 254EAAB1411BAE2A330374B9973ED880 /* SCAlertController */;
-			targetProxy = 0F65227C172CD9983E8063613FAEF670 /* PBXContainerItemProxy */;
-		};
-		B66B9C4C82BB983839A9CCAA724E3C9D /* PBXTargetDependency */ = {
+		0A849A5E2824DAAE69421C1ED9DAD1E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SCAlertController_Example";
 			target = E43A8372B6B5A8924401DC139623C4E1 /* Pods-SCAlertController_Example */;
-			targetProxy = 1501018EBACE00A963F7E0D322ED2905 /* PBXContainerItemProxy */;
+			targetProxy = 32523294BF09CED74E0633CC15A8864A /* PBXContainerItemProxy */;
+		};
+		9A7E0313185793575AD8C1D6FE16AAAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCAlertController;
+			target = 254EAAB1411BAE2A330374B9973ED880 /* SCAlertController */;
+			targetProxy = 55A0818C872B86FC5E918B2CF0C0BE2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,7 +415,6 @@
 			baseConfigurationReference = EA21A6505620077903B6F50C3FCB7AB9 /* Pods-SCAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -464,7 +436,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -538,9 +509,9 @@
 			};
 			name = Debug;
 		};
-		4C85B4AC7F00A03CB21886DE94BA208E /* Release */ = {
+		4B59ACB53DDABBDFCA1A5F65C5AD2659 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3100C3A726D1D85D536689E7534E8FED /* SCAlertController.release.xcconfig */;
+			baseConfigurationReference = D133BA65F164575AD8E2C674DFCBA8D2 /* SCAlertController.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -561,7 +532,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -569,9 +540,9 @@
 			};
 			name = Release;
 		};
-		800AD355C245ED04CD1FC5E43E01FFB4 /* Debug */ = {
+		6FBBC81ED3F43065034685E5B3D52ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 970BB19865D52085847A652AD1F7C512 /* SCAlertController.debug.xcconfig */;
+			baseConfigurationReference = 5F263F55FB0AB5A218D5C6398F0C2C2A /* SCAlertController.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -592,7 +563,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -604,7 +575,6 @@
 			baseConfigurationReference = 1D2D0CDE248DD6BB4B7463016DDA441A /* Pods-SCAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -626,8 +596,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -689,7 +657,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -772,11 +741,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BE166AEDA3FDC9D07D6D67D95A6076E /* Build configuration list for PBXNativeTarget "SCAlertController" */ = {
+		C6B910FCEDCAAC7E196D78FDEB9A36CE /* Build configuration list for PBXNativeTarget "SCAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				800AD355C245ED04CD1FC5E43E01FFB4 /* Debug */,
-				4C85B4AC7F00A03CB21886DE94BA208E /* Release */,
+				6FBBC81ED3F43065034685E5B3D52ABC /* Debug */,
+				4B59ACB53DDABBDFCA1A5F65C5AD2659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

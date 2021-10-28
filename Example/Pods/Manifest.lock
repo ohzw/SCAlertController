@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SCAlertController: bc2b8c97ad7dcd44506feac92e956f053406a8ac
+  SCAlertController: 5a99e2cf429aab83898d772cc92649acdad286ca
 
 PODFILE CHECKSUM: f104d3ddeebe816b00a88c1d94a46d991be1cdbb
 
