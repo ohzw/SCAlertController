@@ -1,0 +1,16 @@
+PODS:
+  - SCAlertController (0.1.0)
+
+DEPENDENCIES:
+  - SCAlertController (from `../`)
+
+EXTERNAL SOURCES:
+  SCAlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SCAlertController: bc2b8c97ad7dcd44506feac92e956f053406a8ac
+
+PODFILE CHECKSUM: f104d3ddeebe816b00a88c1d94a46d991be1cdbb
+
+COCOAPODS: 1.11.2

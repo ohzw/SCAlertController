@@ -1,0 +1,22 @@
+{
+  "name": "SCAlertController",
+  "version": "0.1.0",
+  "summary": "A short description of SCAlertController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ohzw/SCAlertController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ohzw": "ohzwtkm@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ohzw/SCAlertController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SCAlertController/Classes/**/*"
+}

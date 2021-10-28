@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		1EC609FEC6D9929F0A23BDC0 /* Pods_SCAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BED0576BBDCF05C8BF80A09 /* Pods_SCAlertController_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		81F44A0F272AF29000396F49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F44A0E272AF29000396F49 /* MainViewController.swift */; };
+		81F44A1F272AF36800396F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F44A1D272AF34E00396F49 /* Main.storyboard */; };
+		81F44A21272AF37400396F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F44A20272AF37400396F49 /* Assets.xcassets */; };
 		9B6433A8E309CC26E614E84E /* Pods_SCAlertController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63491F6720677F7186C861E /* Pods_SCAlertController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,14 +29,11 @@
 
 /* Begin PBXFileReference section */
 		2DF0F6A62FF8588C1BEC2BA9 /* Pods-SCAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-SCAlertController_Example/Pods-SCAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		37269562A37D2A3EC5C34FA6 /* SCAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SCAlertController.podspec; path = ../SCAlertController.podspec; sourceTree = "<group>"; };
-		5EB5D4FF0FD0FF54AD7D51D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		37269562A37D2A3EC5C34FA6 /* SCAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SCAlertController.podspec; path = ../SCAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EB5D4FF0FD0FF54AD7D51D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SCAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SCAlertController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCAlertController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,9 +41,12 @@
 		69AB5B7639D7F6B35885FD86 /* Pods-SCAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-SCAlertController_Example/Pods-SCAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6BED0576BBDCF05C8BF80A09 /* Pods_SCAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC3A185C9E2352F2BA8FA07 /* Pods-SCAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAlertController_Tests.release.xcconfig"; path = "Target Support Files/Pods-SCAlertController_Tests/Pods-SCAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		81F44A0E272AF29000396F49 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		81F44A1D272AF34E00396F49 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		81F44A20272AF37400396F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63491F6720677F7186C861E /* Pods_SCAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32C97080BF99788E9300FAF /* Pods-SCAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCAlertController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SCAlertController_Tests/Pods-SCAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC80228AC07B5EAB20B2927E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FC80228AC07B5EAB20B2927E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				81F44A0E272AF29000396F49 /* MainViewController.swift */,
+				81F44A1D272AF34E00396F49 /* Main.storyboard */,
+				81F44A20272AF37400396F49 /* Assets.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -147,7 +147,6 @@
 				F32C97080BF99788E9300FAF /* Pods-SCAlertController_Tests.debug.xcconfig */,
 				7CC3A185C9E2352F2BA8FA07 /* Pods-SCAlertController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,9 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				81F44A1F272AF36800396F49 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				81F44A21272AF37400396F49 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				81F44A0F272AF29000396F49 /* MainViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +355,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
