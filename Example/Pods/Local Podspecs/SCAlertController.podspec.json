@@ -19,6 +19,11 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SCAlertController/Classes/**/*",
+  "source_files": "SCAlertController/Classes/*",
+  "resource_bundles": {
+    "SCAlert": [
+      "SCAlertController/Assets/*.xib"
+    ]
+  },
   "swift_version": "5.0"
 }

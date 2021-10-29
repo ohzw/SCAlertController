@@ -90,12 +90,21 @@ open class SCAlertController: UIViewController {
     }
     
     private func setView() {
-        let nib = UINib(nibName: "SCAlert", bundle: Bundle(for: self.classForCoder))
-        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
-            print("Couldn't load Nib View")
-            return
+        let bundle = Bundle(for: self.classForCoder)
+        guard let resourceBundleURL = bundle.url(forResource: "SCAlert", withExtension: "bundle") else {
+            fatalError("bundle not found")
         }
-        self.view = view
+        guard let resourceBundle = Bundle(url: resourceBundleURL) else {
+            fatalError("Cannot access bundle")
+        }
+        guard let alertNib = resourceBundle.loadNibNamed("SCAlert", owner: self, options: nil)?.first else  {
+            fatalError("Nib not found")
+        }
+        guard let alertView = alertNib as? UIView else {
+            fatalError("Could not load view")
+        }
+        
+        self.view = alertView
         self.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         self.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
     }

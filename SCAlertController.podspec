@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SCAlertController/Classes/*'
   s.resource_bundles = {
-   'SCAlertController' => ['SCAlertController/Assets/*.xib']
+   'SCAlert' => ['SCAlertController/Assets/*.xib']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
