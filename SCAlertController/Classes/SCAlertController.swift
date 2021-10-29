@@ -111,6 +111,7 @@ open class SCAlertController: UIViewController {
     
     private func setupAppearance() {
         backgroundView.backgroundColor = .black.withAlphaComponent(SCAlertGlobalAppearance.backgroundDim ?? 0.2)
+        windowView.backgroundColor = SCAlertGlobalAppearance.windowColor
         windowView.clipsToBounds = false
         windowView.layer.cornerRadius = 6
         windowView.layer.shadowOpacity = 0.1
@@ -119,6 +120,9 @@ open class SCAlertController: UIViewController {
         windowView.layer.shadowColor = UIColor.black.cgColor
         windowView.layer.shouldRasterize = true
         windowView.layer.rasterizationScale = UIScreen.main.scale
+        
+        titleLabel.textColor = textColor(bgColor: windowView.backgroundColor!)
+        messageTextView.textColor = textColor(bgColor: windowView.backgroundColor!)
     }
     
     private func addGestures() {
@@ -163,6 +167,27 @@ open class SCAlertController: UIViewController {
         textField.textAlignment = .left
         actionStackView.addArrangedSubview(textField)
         textFields.append(textField)
+    }
+}
+
+extension SCAlertController {
+    func textColor(bgColor: UIColor) -> UIColor {
+        var r: CGFloat = 0.0
+        var g: CGFloat = 0.0
+        var b: CGFloat = 0.0
+        var a: CGFloat = 0.0
+        var brightness: CGFloat = 0.0
+        
+        bgColor.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        // algorithm from: http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
+        brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        if (brightness < 0.5) {
+            return .white
+        }
+        else {
+            return .black
+        }
     }
 }
 
