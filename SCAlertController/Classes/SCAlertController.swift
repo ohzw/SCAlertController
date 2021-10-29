@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 public struct SCAlertAppearance {
-    let windowColor: UIColor
-    let backgroundDim: CGFloat?
-    let normalActionColor: UIColor
-    let cancelActionColor: UIColor
+    public var windowColor: UIColor?
+    public var backgroundDim: CGFloat?
+    public var normalActionColor: UIColor?
+    public var cancelActionColor: UIColor?
     
     public init(
-        windowColor: UIColor,
-        backgroundDim: CGFloat?,
-        normalActionColor: UIColor,
-        cancelActionColor: UIColor
+        windowColor: UIColor = .white,
+        backgroundDim: CGFloat = 0.2,
+        normalActionColor: UIColor = .systemBlue,
+        cancelActionColor: UIColor = .systemRed
     ) {
         self.windowColor = windowColor
         self.backgroundDim = backgroundDim
@@ -27,25 +27,30 @@ public struct SCAlertAppearance {
     }
 }
 
-public var SCAlertGlobalAppearance = SCAlertAppearance(
-    // default appearance
-    windowColor: .white,
-    backgroundDim: 0.2,
-    normalActionColor: .systemBlue,
-    cancelActionColor: .systemPink
-)
+public var SCAlertGlobalAppearance = SCAlertAppearance()
 
 open class SCAlertController: UIViewController {
-    
+    public var appearance: SCAlertAppearance = SCAlertGlobalAppearance
     public var closeOnTapBackground = true
     private(set) public var textFields: [UITextField] = []
     
-    @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var windowView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var messageTextView: UITextView!
-    @IBOutlet weak var contentStackView: UIStackView!
-    @IBOutlet weak var actionStackView: UIStackView!
+    @IBOutlet public weak var backgroundView: UIView!
+    @IBOutlet public weak var windowView: UIView!
+    @IBOutlet public weak var titleLabel: UILabel!
+    @IBOutlet public weak var messageTextView: UITextView!
+    @IBOutlet public weak var contentStackView: UIStackView!
+    @IBOutlet public weak var actionStackView: UIStackView!
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupAppearance()
+    }
+    
+    open func setupAlert() {
+        setView()
+        setupAppearance()
+        addGestures()
+    }
     
     // Alert - normal
     public convenience init(title: String?, message: String?) {
@@ -69,27 +74,7 @@ open class SCAlertController: UIViewController {
         }
     }
     
-    // Alert - error
-    public convenience init(errorMessage: String?) {
-        self.init()
-        
-        setView()
-        setupAppearance()
-        addGestures()
-        
-        titleLabel.text = String.localized(ja: "エラー", en: "Error")
-        
-        if let message = errorMessage {
-            messageTextView.text = message
-        } else {
-            messageTextView.text = ""
-            messageTextView.heightAnchor.constraint(equalToConstant: 4).isActive = true
-        }
-        
-        addAction(action: SCAlertAction(title: "OK", type: .cancel, action: {}))
-    }
-    
-    private func setView() {
+    open func setView() {
         let bundle = Bundle(for: self.classForCoder)
         guard let resourceBundleURL = bundle.url(forResource: "SCAlert", withExtension: "bundle") else {
             fatalError("bundle not found")
@@ -109,9 +94,9 @@ open class SCAlertController: UIViewController {
         self.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
     }
     
-    private func setupAppearance() {
-        backgroundView.backgroundColor = .black.withAlphaComponent(SCAlertGlobalAppearance.backgroundDim ?? 0.2)
-        windowView.backgroundColor = SCAlertGlobalAppearance.windowColor
+    public func setupAppearance() {
+        backgroundView.backgroundColor = .black.withAlphaComponent(appearance.backgroundDim ?? 0.2)
+        windowView.backgroundColor = appearance.windowColor
         windowView.clipsToBounds = false
         windowView.layer.cornerRadius = 6
         windowView.layer.shadowOpacity = 0.1
@@ -121,11 +106,11 @@ open class SCAlertController: UIViewController {
         windowView.layer.shouldRasterize = true
         windowView.layer.rasterizationScale = UIScreen.main.scale
         
-        titleLabel.textColor = textColor(bgColor: windowView.backgroundColor!)
-        messageTextView.textColor = textColor(bgColor: windowView.backgroundColor!)
+        titleLabel.textColor = textColor(bgColor: windowView.backgroundColor ?? .white)
+        messageTextView.textColor = textColor(bgColor: windowView.backgroundColor ?? .white)
     }
     
-    private func addGestures() {
+    public func addGestures() {
         let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(tapBackground))
         backgroundView.addGestureRecognizer(tapRecognizer)
     }
@@ -150,9 +135,9 @@ open class SCAlertController: UIViewController {
     public func addAction(action: SCAlertAction) {
         switch action.type {
         case .normal:
-            action.backgroundColor = SCAlertGlobalAppearance.normalActionColor
+            action.backgroundColor = appearance.normalActionColor
         case .cancel:
-            action.backgroundColor = SCAlertGlobalAppearance.cancelActionColor
+            action.backgroundColor = appearance.cancelActionColor
         }
         
         actionStackView.addArrangedSubview(action)
@@ -199,7 +184,7 @@ extension SCAlertController: UITextFieldDelegate {
 }
 
 extension String {
-    static func localized(ja: String, en: String) -> String {
+    public static func localized(ja: String, en: String) -> String {
         let lang = NSLocale.preferredLanguages[0].prefix(2)
         return lang == "ja" ? ja : en
     }

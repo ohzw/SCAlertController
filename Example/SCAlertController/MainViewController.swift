@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SCAlertController
+import Pods_SCAlertController_Example
  
 class MainViewController: UIViewController {
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class MainViewController: UIViewController {
         alert.addImageContent(UIImage(named: "apitherapy"), 100)
         let textField = UITextField()
         textField.placeholder = "placeholder"
+        alert.appearance.normalActionColor = .blue
         alert.addTextField(textField: textField)
         alert.addAction(action: SCAlertAction(title: "textfield value", type: .normal, action: {
             guard let fieldText = textField.text else { return }
@@ -28,10 +30,16 @@ class MainViewController: UIViewController {
         }))
         alert.addAction(action: SCAlertAction(title: "cancel", type: .cancel, action: {
             print("pushed actioin2!")
-            let alert = SCAlertController(errorMessage: nil)
-            alert.closeOnTapBackground = false
-            alert.addImageContent(UIImage(named: "apitherapy"), 100)
-            self.present(alert, animated: true, completion: nil)
+        
+            let errorAlert = ErrorSCAlert(errorMessage: nil)
+            errorAlert.appearance.cancelActionColor = .red
+            errorAlert.appearance.normalActionColor = .purple
+            errorAlert.closeOnTapBackground = false
+            errorAlert.addImageContent(UIImage(named: "apitherapy"), 100)
+            errorAlert.appearance.windowColor = .yellow
+            self.present(errorAlert, animated: true, completion: {
+                
+            })
         }))
         
         self.present(alert, animated: true)
