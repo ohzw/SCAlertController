@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/SCAlertController.svg?style=flat)](https://cocoapods.org/pods/SCAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/SCAlertController.svg?style=flat)](https://cocoapods.org/pods/SCAlertController)
 
-## Example
+<img src="ScreenShot.png" width="280">
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Support
+- [x] Title
+- [x] Message (TextView)
+- [x] Image
+- [x] TextField
+- [x] Button Action
 
-## Requirements
+automatically switch text color by brightness of window.
+
 
 ## Installation
 
@@ -20,10 +26,34 @@ it, simply add the following line to your Podfile:
 pod 'SCAlertController'
 ```
 
-## Author
+## Example
+```Swift
+    let alert = SEAlertController(title: "Alert Title", message: "text text text text \n text text text")
 
-ohzw, ohzwtkm@gmail.com
+    alert.addImageContent(UIImage(named: "apitherapy"), 100)
 
-## License
+    let textField = UITextField()
+    textField.placeholder = "placeholder"
+    alert.addTextField(textField: textField)
 
-SCAlertController is available under the MIT license. See the LICENSE file for more info.
+    alert.addAction(action: SEAlertAction(title: "textfield value", type: .normal, action: {
+        guard let fieldText = textField.text else { return }
+        print(fieldText)
+    }))
+
+    alert.addAction(action: SEAlertAction(title: "cancel", type: .cancel, action: {
+        print("cancel")
+    }))
+
+    self.present(alert, animated: true)
+```
+
+```Swift 
+    // AppDelegate
+    SCAlertGlobalAppearance = SCAlertAppearance(
+        windowColor: .white,
+        backgroundDim: 0.2,
+        normalActionColor: .systemYellow,
+        cancelActionColor: .systemGreen
+    )
+```
