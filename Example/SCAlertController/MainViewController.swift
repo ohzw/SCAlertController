@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
         }))
         alert.addAction(action: SCAlertAction(title: "cancel", type: .cancel, action: {
             print("pushed actioin2!")
-        
+
             let errorAlert = ErrorSCAlert(errorMessage: nil)
             errorAlert.appearance.cancelActionColor = .red
             errorAlert.appearance.normalActionColor = .purple
@@ -38,10 +38,10 @@ class MainViewController: UIViewController {
             errorAlert.addImageContent(UIImage(named: "apitherapy"), 100)
             errorAlert.appearance.windowColor = .yellow
             self.present(errorAlert, animated: true, completion: {
-                
+
             })
         }))
-        
+
         self.present(alert, animated: true)
     }
 }

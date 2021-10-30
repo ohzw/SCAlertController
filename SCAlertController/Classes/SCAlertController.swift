@@ -52,20 +52,22 @@ open class SCAlertController: UIViewController {
         addGestures()
     }
     
-    // Alert - normal
     public convenience init(title: String?, message: String?) {
         self.init()
+        setupAlert()
         
-        setView()
-        setupAppearance()
-        addGestures()
-        
+        setTitle(title: title)
+        setMessage(message: message)
+    }
+    
+    public func setTitle(title: String?) {
         if let title = title {
             titleLabel.text = title
         } else {
             titleLabel.isHidden = true
         }
-        
+    }
+    public func setMessage(message: String?) {
         if let message = message {
             messageTextView.text = message
         } else {
@@ -74,8 +76,15 @@ open class SCAlertController: UIViewController {
         }
     }
     
-    open func setView() {
-        let bundle = Bundle(for: self.classForCoder)
+    private func setView() {
+        let bundle: Bundle
+        if type(of: self) == SCAlertController.self {
+            bundle = Bundle(for: self.classForCoder)
+        } else { // subclass
+            guard let superClass: AnyObject = self.superclass else { fatalError("no superclass") }
+            bundle = Bundle(for: superClass.classForCoder)
+        }
+        
         guard let resourceBundleURL = bundle.url(forResource: "SCAlert", withExtension: "bundle") else {
             fatalError("bundle not found")
         }
