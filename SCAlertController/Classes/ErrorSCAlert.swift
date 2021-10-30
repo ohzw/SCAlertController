@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SCAlertController
 
 open class ErrorSCAlert: SCAlertController {
     var errorMessage: String?
