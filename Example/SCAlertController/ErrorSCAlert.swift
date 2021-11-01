@@ -17,6 +17,7 @@ class ErrorSCAlert: SCAlertController {
         setTitle(title: String.localized(ja: "エラー", en: "Error"))
         setMessage(message: errorMessage)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

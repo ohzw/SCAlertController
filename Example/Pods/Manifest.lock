@@ -1,5 +1,5 @@
 PODS:
-  - SCAlertController (0.1.0)
+  - SCAlertController (0.1.2)
 
 DEPENDENCIES:
   - SCAlertController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SCAlertController: 289d81a6754fe82c7484e10fc581e1e26ff71e5a
+  SCAlertController: 8419ed24d7ff91fdfc42918e58e77bfa28a5798f
 
 PODFILE CHECKSUM: f104d3ddeebe816b00a88c1d94a46d991be1cdbb
 
