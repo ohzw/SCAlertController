@@ -10,20 +10,26 @@ import UIKit
 
 public struct SCAlertAppearance {
     public var windowColor: UIColor?
+    public var textColor: UIColor?
     public var backgroundDim: CGFloat?
     public var normalActionColor: UIColor?
     public var cancelActionColor: UIColor?
+    public var checkBoxColor: UIColor?
     
     public init(
         windowColor: UIColor = .white,
+        textColor: UIColor = .black,
         backgroundDim: CGFloat = 0.2,
         normalActionColor: UIColor = .systemBlue,
-        cancelActionColor: UIColor = .systemRed
+        cancelActionColor: UIColor = .systemRed,
+        checkBoxColor: UIColor = .gray
     ) {
         self.windowColor = windowColor
+        self.textColor = textColor
         self.backgroundDim = backgroundDim
         self.normalActionColor = normalActionColor
         self.cancelActionColor = cancelActionColor
+        self.checkBoxColor = checkBoxColor
     }
 }
 
@@ -34,6 +40,7 @@ open class SCAlertController: UIViewController {
     public var closeOnTapBackground = true
     public var onDismiss: (() -> Void)?
     private(set) public var textFields: [UITextField] = []
+    private(set) public var checkBoxes: [SCCheckBox] = []
     
     @IBOutlet public weak var backgroundView: UIView!
     @IBOutlet public weak var windowView: UIView!
@@ -122,8 +129,8 @@ open class SCAlertController: UIViewController {
         windowView.layer.shouldRasterize = true
         windowView.layer.rasterizationScale = UIScreen.main.scale
         
-        titleLabel.textColor = textColor(bgColor: windowView.backgroundColor ?? .white)
-        messageTextView.textColor = textColor(bgColor: windowView.backgroundColor ?? .white)
+        titleLabel.textColor = appearance.textColor
+        messageTextView.textColor = appearance.textColor
     }
     
     public func addGestures() {
@@ -169,26 +176,30 @@ open class SCAlertController: UIViewController {
         actionStackView.addArrangedSubview(textField)
         textFields.append(textField)
     }
-}
+    
+    public func addCheckBox(title: String) {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.alignment = .fill
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 8
+        
+        let checkbox = SCCheckBox(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        checkbox.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        checkbox.tintColor = appearance.checkBoxColor
+        checkBoxes.append(checkbox)
+        
+        let label = UILabel()
+        label.text = title
+        label.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        label.adjustsFontSizeToFitWidth = true
+        label.textColor = appearance.textColor
 
-extension SCAlertController {
-    func textColor(bgColor: UIColor) -> UIColor {
-        var r: CGFloat = 0.0
-        var g: CGFloat = 0.0
-        var b: CGFloat = 0.0
-        var a: CGFloat = 0.0
-        var brightness: CGFloat = 0.0
         
-        bgColor.getRed(&r, green: &g, blue: &b, alpha: &a)
+        stackView.addArrangedSubview(checkbox)
+        stackView.addArrangedSubview(label)
         
-        // algorithm from: http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
-        brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-        if (brightness < 0.5) {
-            return .white
-        }
-        else {
-            return .black
-        }
+        actionStackView.addArrangedSubview(stackView)
     }
 }
 

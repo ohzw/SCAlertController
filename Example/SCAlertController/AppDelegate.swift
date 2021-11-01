@@ -19,9 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         SCAlertGlobalAppearance = SCAlertAppearance(
             windowColor: .white,
+            textColor: .black,
             backgroundDim: 0.2,
             normalActionColor: .systemYellow,
-            cancelActionColor: .systemGreen
+            cancelActionColor: .systemGreen,
+            checkBoxColor: .darkGray
         )
         
 

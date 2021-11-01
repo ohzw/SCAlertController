@@ -1,6 +1,6 @@
 {
   "name": "SCAlertController",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "summary": "Simple Customizeable Alert for iOS App.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ohzw/SCAlertController",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ohzw/SCAlertController.git",
-    "tag": "0.1.2"
+    "tag": "0.1.4"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -23,6 +23,9 @@
   "resource_bundles": {
     "SCAlert": [
       "SCAlertController/Assets/*.xib"
+    ],
+    "SCIcons": [
+      "SCAlertController/Assets/*.xcassets"
     ]
   },
   "swift_version": "5.0"

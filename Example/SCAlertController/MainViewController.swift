@@ -17,19 +17,30 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: Any) {
+        
         let alert = SCAlertController(title: "Alert Title", message: "text text text text \n text text text")
+        
         alert.addImageContent(UIImage(named: "apitherapy"), 100)
+        
         let textField = UITextField()
         textField.placeholder = "placeholder"
         alert.appearance.normalActionColor = .blue
         alert.addTextField(textField: textField)
         alert.addAction(action: SCAlertAction(title: "textfield value", type: .normal, action: {
-            guard let fieldText = textField.text else { return }
-            print(fieldText)
+            print(textField.text!)
         }))
+        
+        alert.addCheckBox(title: "check box 1")
+        alert.addCheckBox(title: "check box 2")
+        alert.addCheckBox(title: "check box 3")
+        alert.addCheckBox(title: "check box 4")
+        alert.addAction(action: SCAlertAction(title: "check checkboxes", type: .normal, action: {
+            for (i, box) in alert.checkBoxes.enumerated() {
+                print("box\(i): \(box.isChecked)")
+            }
+        }))
+        
         alert.addAction(action: SCAlertAction(title: "cancel", type: .cancel, action: {
-            print("pushed actioin2!")
-
             let errorAlert = ErrorSCAlert(errorMessage: nil)
             errorAlert.appearance.cancelActionColor = .red
             errorAlert.appearance.normalActionColor = .purple
