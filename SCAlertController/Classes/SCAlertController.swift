@@ -32,6 +32,7 @@ public var SCAlertGlobalAppearance = SCAlertAppearance()
 open class SCAlertController: UIViewController {
     public var appearance: SCAlertAppearance = SCAlertGlobalAppearance
     public var closeOnTapBackground = true
+    public var onDismiss: (() -> Void)?
     private(set) public var textFields: [UITextField] = []
     
     @IBOutlet public weak var backgroundView: UIView!
