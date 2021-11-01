@@ -24,12 +24,11 @@ class MainViewController: UIViewController {
         
         let textField = UITextField()
         textField.placeholder = "placeholder"
-        alert.appearance.normalActionColor = .blue
         alert.addTextField(textField: textField)
         alert.addAction(action: SCAlertAction(title: "textfield value", type: .normal, action: {
             print(textField.text!)
         }))
-        
+        alert.addDivider()
         alert.addCheckBox(title: "check box 1")
         alert.addCheckBox(title: "check box 2")
         alert.addCheckBox(title: "check box 3")
