@@ -201,6 +201,13 @@ open class SCAlertController: UIViewController {
         
         actionStackView.addArrangedSubview(stackView)
     }
+    
+    public func addDivider(color: UIColor = .lightGray, _ height: CGFloat = 1.5) {
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: actionStackView.frame.width, height: height))
+        lineView.heightAnchor.constraint(equalToConstant: height).isActive = true
+        lineView.backgroundColor = color
+        actionStackView.addArrangedSubview(lineView)
+    }
 }
 
 extension SCAlertController: UITextFieldDelegate {

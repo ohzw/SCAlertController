@@ -34,6 +34,7 @@ class MainViewController: UIViewController {
         alert.addCheckBox(title: "check box 2")
         alert.addCheckBox(title: "check box 3")
         alert.addCheckBox(title: "check box 4")
+        alert.addDivider()
         alert.addAction(action: SCAlertAction(title: "check checkboxes", type: .normal, action: {
             for (i, box) in alert.checkBoxes.enumerated() {
                 print("box\(i): \(box.isChecked)")
