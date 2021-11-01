@@ -45,6 +45,12 @@ open class SCAlertController: UIViewController {
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupAppearance()
+        
+        if type(of: self) == SCAlertController.self &&
+            actionStackView.arrangedSubviews.count == 0
+        {
+            addAction(action: SCAlertAction(title: "OK", type: .normal, action: {}))
+        }
     }
     
     open func setupAlert() {

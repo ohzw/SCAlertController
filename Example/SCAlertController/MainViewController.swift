@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: Any) {
-        
         let alert = SCAlertController(title: "Alert Title", message: "text text text text \n text text text")
         alert.addImageContent(UIImage(named: "apitherapy"), 100)
         let textField = UITextField()
