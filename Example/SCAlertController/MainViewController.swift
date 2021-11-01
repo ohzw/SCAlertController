@@ -37,11 +37,12 @@ class MainViewController: UIViewController {
             errorAlert.closeOnTapBackground = false
             errorAlert.addImageContent(UIImage(named: "apitherapy"), 100)
             errorAlert.appearance.windowColor = .yellow
-            self.present(errorAlert, animated: true, completion: {
-
-            })
+            errorAlert.onDismiss = { print("dismiss error alert") }
+            self.present(errorAlert, animated: true, completion: nil)
         }))
 
+        alert.onDismiss = { print("dismiss alert") }
         self.present(alert, animated: true)
+        
     }
 }

@@ -126,11 +126,11 @@ open class SCAlertController: UIViewController {
     
     
     @objc private func dismissAlert() {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: onDismiss)
     }
     @objc private func tapBackground() {
         if closeOnTapBackground {
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: onDismiss)
         }
     }
     
